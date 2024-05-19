@@ -1,0 +1,30 @@
+{
+  "name": "practice11-asynchrony-promises",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://tanyamelnyk19.github.io/practice11-asynchrony-promises",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /practice11-asynchrony-promises/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanyamelnyk19/practice11-asynchrony-promises.git"
+  },
+  "keywords": [],
+  "author": "Tanya Melnyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanyamelnyk19/practice11-asynchrony-promises/issues"
+  },
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
