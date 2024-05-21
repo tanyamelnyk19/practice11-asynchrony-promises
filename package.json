@@ -4,7 +4,7 @@
   "description": "",
   "homepage": "https://tanyamelnyk19.github.io/practice11-asynchrony-promises",
   "scripts": {
-    "start": "parcel src/*.html",
+    "start": "parcel src/*.html --port 3000",
     "build": "parcel build src/*.html --public-url /practice11-asynchrony-promises/"
   },
   "repository": {
@@ -19,7 +19,8 @@
   },
   "dependencies": {
     "flatpickr": "^4.6.13",
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.7"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
