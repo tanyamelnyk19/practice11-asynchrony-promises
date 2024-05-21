@@ -26,7 +26,7 @@ img {
   font-size: 20px;
 }
 
-button[data-start] {
+button[data-start], button[data-stop] {
   padding: 5px;
   font-weight: 500;
   font-size: 20px;

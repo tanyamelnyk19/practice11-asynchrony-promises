@@ -1,4 +1,6 @@
 import flatpickr from 'flatpickr';
+// import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import { Report } from 'notiflix/build/notiflix-report-aio';
 import 'flatpickr/dist/flatpickr.min.css';
 
 const refs = {
@@ -22,7 +24,13 @@ const options = {
     const currentDateInMs = Date.now();
 
     if (selectedDateInMs < currentDateInMs) {
-      window.alert('Please choose a date in the future');
+      // window.alert('Please choose a date in the future');
+      // Notify.failure('Please choose a date in the future');
+      Report.failure(
+        'Failure',
+        'Please choose a date in the future',
+        'OK',
+      );
       return;
     }
 
@@ -41,6 +49,12 @@ function onStartBtnClick() {
 
     if (deltaTime <= 0) {
       clearInterval(intervalId);
+      Report.success(
+        'Success',
+        'Countdown Finished!',
+        'OK',
+      );
+      refs.startBtn.disabled = true;
       return;
     }
 
